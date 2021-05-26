@@ -12,12 +12,28 @@
     <!-- Application wrapper -->
     <div id="app" class="h-100">
         <!-- App header -->
-        <header class="d-flex justify-content-center align-items-center">
-            <h1>Micius</h1>
+        <header class="text-center">
+            <h1>Gatti matti</h1>
         </header>
 
         <!-- App content -->
-        <main></main>
+        <main>
+            <section id="first-cat" class="d-flex flex-column justify-content-center align-items-center">
+                <h2 class="text-center">Foto Prisk</h2>
+
+                <img :src="'./assets/img/' + currentWhiskeyPic + '.jpg'" width="300" alt="">
+
+                <button @click="getRandomPhoto(whiskeyPics)">Cambia Prisk</button>
+            </section>
+            
+            <section id="second-cat" class="d-flex flex-column justify-content-center align-items-center">
+                <h2 class="text-center">Foto Zelduozis</h2>
+
+                <img :src="'./assets/img/' + currentZeldaPic + '.jpg'" width="300" alt="">
+
+                <button @click="getRandomPhoto(zeldaPics)">Cambia Zelduozis</button>
+            </section>
+        </main>
 
         <!-- App footer -->
         <footer></footer>

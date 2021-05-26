@@ -19,10 +19,6 @@ const app = new Vue({
         ]
     },
 
-    computed: {
-        
-    },
-
     methods: {
         /**
          * Update the pic of the given array
@@ -31,7 +27,11 @@ const app = new Vue({
         getRandomPhoto(array) {
             const randomNumber = Math.floor(Math.random() * array.length);
 
-            this.currentPic = array[randomNumber];
+            if (array === this.whiskeyPics) {
+                this.currentWhiskeyPic = array[randomNumber];
+            } else {
+                this.currentZeldaPic = array[randomNumber];
+            }
         }
     },
 

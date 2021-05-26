@@ -21,7 +21,7 @@
             <section id="first-cat" class="d-flex flex-column justify-content-center align-items-center">
                 <h2 class="text-center">Foto Prisk</h2>
 
-                <img :src="'./assets/img/' + currentWhiskeyPic + '.jpg'" width="300" alt="">
+                <img :src="'./assets/img/' + currentWhiskeyPic + '.jpg'" width="220" alt="">
 
                 <button @click="getRandomPhoto(whiskeyPics)">Cambia Prisk</button>
             </section>
@@ -29,9 +29,17 @@
             <section id="second-cat" class="d-flex flex-column justify-content-center align-items-center">
                 <h2 class="text-center">Foto Zelduozis</h2>
 
-                <img :src="'./assets/img/' + currentZeldaPic + '.jpg'" width="300" alt="">
+                <img :src="'./assets/img/' + currentZeldaPic + '.jpg'" width="220" alt="">
 
                 <button @click="getRandomPhoto(zeldaPics)">Cambia Zelduozis</button>
+            </section>
+
+            <section id="third-cat" class="d-flex flex-column justify-content-center align-items-center">
+                <h2 class="text-center">Bonus Pallinuozis</h2>
+
+                <img :src="'./assets/img/' + currentPallinoPic + '.jpg'" width="220" alt="">
+
+                <button @click="getRandomPhoto(pallinoPics)">Cambia Pallinuozis</button>
             </section>
         </main>
 

@@ -21,7 +21,7 @@
             <section id="whiskey" class="d-flex flex-column justify-content-center align-items-center">
                 <h2 class="text-center">Foto Prisk</h2>
 
-                <img :src="'./assets/img/' + currentWhiskeyPic + '.jpg'" width="220" alt="">
+                <img class="rounded" :src="'./assets/img/' + currentWhiskeyPic + '.jpg'" width="220" alt="">
 
                 <button class="btn btn-danger my-3" @click="getRandomPic(whiskeyPics)">Cambia Prisk</button>
             </section>
@@ -29,7 +29,7 @@
             <section id="zelda" class="d-flex flex-column justify-content-center align-items-center">
                 <h2 class="text-center">Foto Zelduozzis</h2>
 
-                <img :src="'./assets/img/' + currentZeldaPic + '.jpg'" width="220" alt="">
+                <img class="rounded" :src="'./assets/img/' + currentZeldaPic + '.jpg'" width="220" alt="">
 
                 <button class="btn btn-danger my-3" @click="getRandomPic(zeldaPics)">Cambia Zelduozzis</button>
             </section>

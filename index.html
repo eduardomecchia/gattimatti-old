@@ -13,26 +13,30 @@
     <div id="app" class="h-100 d-flex flex-column">
         <!-- App header -->
         <header class="text-center py-3">
-            <h1>Gatti matti</h1>
+            <h1 class="font-weight-bold">Gatti matti! 🐈</h1>
         </header>
 
         <!-- App content -->
         <main class="py-3 container h-100">
             <div class="row h-100">
                 <section id="whiskey" class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
-                    <h2 class="text-center text-white">Foto Prisk</h2>
-
-                    <img class="rounded" :src="'./assets/img/' + currentWhiskeyPic + '.jpg'" width="220" alt="">
-
-                    <button class="btn btn-danger my-3" @click="getRandomPic(whiskeyPics)">Cambia Prisk</button>
+                    <div class="card p-4">
+                        <h2 class="text-center text-warning font-weight-bold">Foto Prisk</h2>
+    
+                        <img class="rounded" :src="'./assets/img/' + currentWhiskeyPic + '.jpg'" width="220" alt="">
+    
+                        <button class="btn btn-warning my-3" @click="getRandomPic(whiskeyPics)">Cambia Prisk</button>
+                    </div>
                 </section>
                 
                 <section id="zelda" class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
-                    <h2 class="text-center text-white">Foto Zelduozzis</h2>
+                    <div class="card p-4">
+                        <h2 class="text-center text-dark font-weight-bold">Foto Zelduozzis</h2>
 
-                    <img class="rounded" :src="'./assets/img/' + currentZeldaPic + '.jpg'" width="220" alt="">
+                        <img class="rounded" :src="'./assets/img/' + currentZeldaPic + '.jpg'" width="220" alt="">
 
-                    <button class="btn btn-danger my-3" @click="getRandomPic(zeldaPics)">Cambia Zelduozzis</button>
+                        <button class="btn btn-dark my-3" @click="getRandomPic(zeldaPics)">Cambia Zelduozzis</button>
+                    </div>
                 </section>
             </div>
         </main>

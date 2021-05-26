@@ -8,14 +8,14 @@ body {
 /* App wrapper rules */
 
 #app {
-    background-color: #ffe7d0;
+    background-color: #d48c00b8;
     overflow-y: auto;
 }
 
 /* Header rules */
 
 header {
-    background-color: #ffd7b3;
+    background-color: #d48c00;
     border-bottom: 2px solid orange;
 }
 
@@ -28,16 +28,15 @@ header h1 {
 main {
     background-image: url(../img/cloud.jpg);
     background-repeat: no-repeat;
+    overflow-y: auto;
 }
 
-#whiskey {
-}
-
-#zelda {
+main .card {
+    border-radius: 10px;
 }
 
 /* Footer rules */
 
 footer {
-    background-color: #ffaa60;
+    background-color: #d48c00;
 }

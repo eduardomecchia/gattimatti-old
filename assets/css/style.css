@@ -16,11 +16,10 @@ body {
 
 header {
     background-color: #d48c00;
-    border-bottom: 2px solid orange;
 }
 
 header h1 {
-    font-size: 50px;
+    font-size: 40px;
 }
 
 /* Content rules */

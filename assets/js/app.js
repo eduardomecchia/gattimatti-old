@@ -41,13 +41,6 @@ const app = new Vue({
             "zelda_01",
             "zelda_02",
             "zelda_03"
-        ],
-
-        currentPallinoPic: null,
-
-        pallinoPics: [
-            "pallino_01",
-            "pallino_02",
         ]
     },
 
@@ -61,10 +54,8 @@ const app = new Vue({
 
             if (array === this.whiskeyPics) {
                 this.currentWhiskeyPic = array[randomNumber];
-            } else if (array === this.zeldaPics) {
-                this.currentZeldaPic = array[randomNumber];
             } else {
-                this.currentPallinoPic = array[randomNumber];
+                this.currentZeldaPic = array[randomNumber];
             }
         }
     },
@@ -72,10 +63,8 @@ const app = new Vue({
     created() {
         const randomWhiskey = Math.floor(Math.random() * this.whiskeyPics.length);
         const randomZelda = Math.floor(Math.random() * this.zeldaPics.length);
-        const randomPallino = Math.floor(Math.random() * this.pallinoPics.length);
 
         this.currentWhiskeyPic = this.whiskeyPics[randomWhiskey];
         this.currentZeldaPic = this.zeldaPics[randomZelda];
-        this.currentPallinoPic = this.pallinoPics[randomPallino];
     }
 });

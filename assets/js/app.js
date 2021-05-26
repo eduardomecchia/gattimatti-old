@@ -69,7 +69,7 @@ const app = new Vue({
          * Update the pic of the given array
          * @param {array} array 
          */
-        getRandomPhoto(array) {
+        getRandomPic(array) {
             const randomNumber = Math.floor(Math.random() * array.length);
 
             if (array === this.whiskeyPics) {

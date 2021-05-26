@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"> 
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body class="py-3">
+<body>
     <!-- Application wrapper -->
-    <div id="app" class="h-100">
+    <div id="app" class="h-100 py-3">
         <!-- App header -->
         <header class="text-center">
             <h1>Gatti matti</h1>
@@ -23,7 +23,7 @@
 
                 <img :src="'./assets/img/' + currentWhiskeyPic + '.jpg'" width="220" alt="">
 
-                <button @click="getRandomPhoto(whiskeyPics)">Cambia Prisk</button>
+                <button class="btn btn-danger my-3" @click="getRandomPhoto(whiskeyPics)">Cambia Prisk</button>
             </section>
             
             <section id="second-cat" class="d-flex flex-column justify-content-center align-items-center">
@@ -31,7 +31,7 @@
 
                 <img :src="'./assets/img/' + currentZeldaPic + '.jpg'" width="220" alt="">
 
-                <button @click="getRandomPhoto(zeldaPics)">Cambia Zelduozis</button>
+                <button class="btn btn-danger my-3" @click="getRandomPhoto(zeldaPics)">Cambia Zelduozis</button>
             </section>
 
             <section id="third-cat" class="d-flex flex-column justify-content-center align-items-center">
@@ -39,7 +39,7 @@
 
                 <img :src="'./assets/img/' + currentPallinoPic + '.jpg'" width="220" alt="">
 
-                <button @click="getRandomPhoto(pallinoPics)">Cambia Pallinuozis</button>
+                <button class="btn btn-danger my-3" @click="getRandomPhoto(pallinoPics)">Cambia Pallinuozis</button>
             </section>
         </main>
 

@@ -8,7 +8,7 @@ body {
 /* App wrapper rules */
 
 #app {
-    width: 95%;
+    width: 100%;
     overflow-y: auto;
     background-color: lightcoral;
     margin: 0 auto;

@@ -32,7 +32,16 @@ const app = new Vue({
             "prisk_25",
             "prisk_26",
             "prisk_27",
-            "prisk_28"
+            "prisk_28",
+            "prisk_29",
+            "prisk_30",
+            "prisk_31",
+            "prisk_32",
+            "prisk_33",
+            "prisk_34",
+            "prisk_35",
+            "prisk_36",
+            "prisk_37"
         ],
 
         currentZeldaPic: null,
@@ -40,7 +49,18 @@ const app = new Vue({
         zeldaPics: [
             "zelda_01",
             "zelda_02",
-            "zelda_03"
+            "zelda_03",
+            "zelda_04",
+            "zelda_05",
+            "zelda_06",
+            "zelda_07",
+            "zelda_08",
+            "zelda_09",
+            "zelda_10",
+            "zelda_11",
+            "zelda_12",
+            "zelda_13",
+            "zelda_14"
         ]
     },
 

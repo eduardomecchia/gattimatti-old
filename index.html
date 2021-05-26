@@ -17,22 +17,24 @@
         </header>
 
         <!-- App content -->
-        <main class="py-3">
-            <section id="whiskey" class="d-flex flex-column justify-content-center align-items-center">
-                <h2 class="text-center">Foto Prisk</h2>
+        <main class="py-3 container">
+            <div class="row">
+                <section id="whiskey" class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                    <h2 class="text-center">Foto Prisk</h2>
 
-                <img class="rounded" :src="'./assets/img/' + currentWhiskeyPic + '.jpg'" width="220" alt="">
+                    <img class="rounded" :src="'./assets/img/' + currentWhiskeyPic + '.jpg'" width="220" alt="">
 
-                <button class="btn btn-danger my-3" @click="getRandomPic(whiskeyPics)">Cambia Prisk</button>
-            </section>
-            
-            <section id="zelda" class="d-flex flex-column justify-content-center align-items-center">
-                <h2 class="text-center">Foto Zelduozzis</h2>
+                    <button class="btn btn-danger my-3" @click="getRandomPic(whiskeyPics)">Cambia Prisk</button>
+                </section>
+                
+                <section id="zelda" class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                    <h2 class="text-center">Foto Zelduozzis</h2>
 
-                <img class="rounded" :src="'./assets/img/' + currentZeldaPic + '.jpg'" width="220" alt="">
+                    <img class="rounded" :src="'./assets/img/' + currentZeldaPic + '.jpg'" width="220" alt="">
 
-                <button class="btn btn-danger my-3" @click="getRandomPic(zeldaPics)">Cambia Zelduozzis</button>
-            </section>
+                    <button class="btn btn-danger my-3" @click="getRandomPic(zeldaPics)">Cambia Zelduozzis</button>
+                </section>
+            </div>
         </main>
 
         <!-- App footer -->

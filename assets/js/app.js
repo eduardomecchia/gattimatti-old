@@ -41,7 +41,11 @@ const app = new Vue({
             "prisk_34",
             "prisk_35",
             "prisk_36",
-            "prisk_37"
+            "prisk_37",
+            "prisk_38",
+            "prisk_39",
+            "prisk_40",
+            "prisk_41"
         ],
 
         currentZeldaPic: null,
